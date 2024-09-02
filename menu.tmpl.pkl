@@ -1,5 +1,5 @@
-import "items/basicMenuItem.tmpl.pkl" as BasicMenuItem
-import "items/advancedMenuItem.tmpl.pkl" as AdvancedMenuItem
+import "basicMenuItem.tmpl.pkl" as BasicMenuItem
+import "advancedMenuItem.tmpl.pkl" as AdvancedMenuItem
 
 title: String 
 description: String? 

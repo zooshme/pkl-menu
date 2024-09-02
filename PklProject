@@ -1,8 +1,10 @@
 amends "pkl:Project"
 
+local githubUser = "zooshme"
+
 package {
     name = "pkl-menu"
     version = "0.0.1"
-    baseUri = "package://pkg.pkl-lang.org/github.com/zooshme/pkl-menu"
-    packageZipUrl = "https://github.com/zooshme/pkl-menu/releases/download/pkl-menu@0.0.1/pkl-menu@0.0.1.zip" 
+    baseUri = "package://pkg.pkl-lang.org/github.com/\(githubUser)/\(name)"
+    packageZipUrl = "https://github.com/\(githubUser)/\(name)/releases/download/\(name)@\(version)/\(name)@\(version).zip" 
 }
