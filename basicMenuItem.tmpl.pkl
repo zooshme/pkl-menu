@@ -1,0 +1,7 @@
+open module BasicMenuItem
+
+title: String
+subtitle: String?
+poster: String?
+description: String?
+price: Float?

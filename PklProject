@@ -1,0 +1,8 @@
+amends "pkl:Project"
+
+package {
+    name = "pkl-menu"
+    version = "0.0.1"
+    baseUri = "package://pkg.pkl-lang.org/github.com/zooshme/pkl-menu"
+    packageZipUrl = "https://pkl.pkl-lang.org/github.com/zooshme/pkl-menu/pkl-menu@0.0.1" 
+}

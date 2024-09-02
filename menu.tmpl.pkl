@@ -1,0 +1,6 @@
+import "items/basicMenuItem.tmpl.pkl" as BasicMenuItem
+import "items/advancedMenuItem.tmpl.pkl" as AdvancedMenuItem
+
+title: String 
+description: String? 
+items: Mapping<String, BasicMenuItem | AdvancedMenuItem> 

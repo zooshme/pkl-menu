@@ -1,0 +1,31 @@
+module AdvancedMenuItem
+
+extends "basicMenuItem.tmpl.pkl"
+
+open class BasicOption {
+    title: String
+    description: String?
+    price: Float?
+}
+
+class CompositeOption extends BasicOption {
+    options: OneOf | ManyOf
+    expanded: Boolean = false
+}
+
+class ManyOf {
+    type_ = "manyOf"
+    min: Int?
+    max: Int?
+    all: Boolean?
+    items: Mapping<String, BasicOption | CompositeOption>
+    selected: Listing<String>?
+}
+
+class OneOf {
+    type_ = "oneOf"
+    items: Mapping<String, BasicOption | CompositeOption>
+    selected: String?
+}
+
+options: OneOf | ManyOf
